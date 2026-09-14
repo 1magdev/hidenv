@@ -83,14 +83,19 @@ $ hidenv --show API_KEY
 
 ## Install
 
-You need Rust. Install it from [rustup.rs](https://rustup.rs), then install a
-specific release version:
+**Requisito obrigatório:** você precisa do `cargo` instalado. Se não tiver,
+instale o Rust primeiro em [rustup.rs](https://rustup.rs) (inclui o `cargo`):
+
+- Linux / macOS: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+- Windows: baixe e execute `rustup-init.exe` de [rustup.rs](https://rustup.rs)
+
+Depois instale a versão:
 
 ```bash
 cargo install --git https://github.com/1magdev/hidenv --tag v0.1.0
 ```
 
-This works on Linux, macOS, and Windows.
+Funciona em Linux, macOS e Windows.
 
 To also install the agent-integration files (skills, commands, and
 instructions for OpenCode and Claude Code), clone the repo and run the
