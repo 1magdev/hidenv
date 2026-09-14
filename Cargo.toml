@@ -1,0 +1,10 @@
+[package]
+name = "hidenv"
+version = "0.1.0"
+edition = "2021"
+description = "Masks secret values in environment files before they are read by AI agents or shown in chat."
+
+[profile.release]
+lto = true
+strip = true
+opt-level = 3
